@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Rachid Ouarmina</title>
+    <meta name="description"
+        content="Neem contact op met Rachid Ouarmina voor een stage, een project of een vraag. Stuur gerust een bericht via het formulier.">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#inhoud"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800">
+        Ga naar de inhoud
+    </a>
+
+    <div id="top" class="mx-auto max-w-7xl">
+
+        <header class="flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
+            <a href="index.html" class="flex items-center focus-visible:outline-2 focus-visible:outline-blue-700">
+                <img src="images/logo_naam.png" alt="logo" class="h-20 w-48 object-contain">
+            </a>
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop"
+                class="cursor-pointer rounded-lg border px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li><a href="index.html"
+                            class="block px-3 py-2 rounded-lg hover:underline focus-visible:outline-2 focus-visible:outline-blue-700">Home</a>
+                    </li>
+                    <li><a href="portofolio.html"
+                            class="block px-3 py-2 rounded-lg hover:underline focus-visible:outline-2 focus-visible:outline-blue-700">Portfolio</a>
+                    </li>
+                    <li><a href="project.html"
+                            class="block px-3 py-2 rounded-lg hover:underline focus-visible:outline-2 focus-visible:outline-blue-700">Project</a>
+                    </li>
+                    <li><a href="contact.html" aria-current="page"
+                            class="block px-3 py-2 rounded-lg font-bold achtergrond-roos focus-visible:outline-2 focus-visible:outline-blue-700">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-4">
+
+            <main id="inhoud" class="flex flex-col gap-8 lg:col-span-3">
+
+                <section class="flex flex-col gap-4">
+                    <h1 class="text-2xl font-bold md:text-4xl">Contactpagina</h1>
+                    <p class="max-w-xl">Voor meer info, contacteer me via dit e-mailadres:</p>
+                    <a href="mailto:"
+                        class="text-2xl font-bold underline focus-visible:outline-2 focus-visible:outline-blue-700">rachid@aphogeschool.be</a>
+                </section>
+
+                <section class="flex flex-col gap-4 rounded-lg p-4 sm:p-6 lg:max-w-2xl achtergrond-roos">
+                    <h2 class="text-xl font-bold">Stuur me een bericht</h2>
+                    <p>Velden met een <span class="font-semibold text-red-700">*</span> zijn verplicht.</p>
+
+                    <form action="#" method="get" class="grid gap-4">
+
+                        <fieldset class="border-0 p-0">
+                            <legend class="font-semibold">Waar gaat het over?</legend>
+                            <div class="mt-2 flex flex-wrap gap-4">
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" id="onderwerp-website" name="onderwerp" value="website" checked
+                                        class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                                    <label for="onderwerp-website">Website</label>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" id="onderwerp-webshop" name="onderwerp" value="webshop"
+                                        class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                                    <label for="onderwerp-webshop">Webshop</label>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" id="onderwerp-applicatie" name="onderwerp" value="applicatie"
+                                        class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                                    <label for="onderwerp-applicatie">Applicatie</label>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <input type="radio" id="onderwerp-iets-anders" name="onderwerp" value="iets-anders"
+                                        class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                                    <label for="onderwerp-iets-anders">Iets anders</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <label for="naam" class="block font-medium">naam <span class="text-red-700"
+                                    aria-hidden="true">*</span></label>
+                            <input type="text" id="naam" name="naam" autocomplete="name" required
+                                class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                        </div>
+
+                        <div>
+                            <label for="mail" class="block font-medium">e-mailadres <span class="text-red-700"
+                                    aria-hidden="true">*</span></label>
+                            <input type="email" id="mail" name="email" autocomplete="email" required
+                                aria-describedby="mail-hulp"
+                                class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 text-gray-900 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                            <p id="mail-hulp" class="mt-1 text-sm text-gray-600">Vul een e-mailadres in zoals
+                                naam@voorbeeld.be.</p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block">Dit
+                                e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.</p>
+                        </div>
+
+                        <div>
+                            <label for="bericht" class="block font-medium">bericht <span class="text-red-700"
+                                    aria-hidden="true">*</span></label>
+                            <textarea id="bericht" name="bericht" rows="5" required minlength="10"
+                                aria-describedby="bericht-hulp"
+                                class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 text-gray-900 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"></textarea>
+                            <p id="bericht-hulp" class="mt-1 text-sm text-gray-600">Schrijf minstens tien tekens.</p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block">Je
+                                bericht is te kort. Schrijf minstens tien tekens.</p>
+                        </div>
+
+                        <button type="submit"
+                            class="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2 font-bold achtergrond-zwart focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                            Verstuur bericht
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="size-5" aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </button>
+                        <p class="text-sm">Ik gebruik je gegevens enkel om je te antwoorden.</p>
+
+                    </form>
+                </section>
+
+            </main>
+
+            <aside>
+                <h2 class="mb-4 text-xl font-bold">Goed om te weten</h2>
+                <dl class="grid grid-cols-2 gap-4 border-t pt-4 lg:grid-cols-1">
+                    <div>
+                        <dt class="text-sm">Locatie</dt>
+                        <dd class="font-bold">[Locatie]</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm">Beschikbaar</dt>
+                        <dd class="font-bold">[Dagen]</dd>
+                    </div>
+                </dl>
+            </aside>
+
+        </div>
+
+        <footer class="mt-12 flex flex-col gap-8 rounded-t-4xl p-6 sm:p-8 achtergrond-zwart">
+            <section class="flex flex-col items-start gap-4">
+                <h2 class="max-w-2xl text-2xl font-bold md:text-4xl">Wil je contact opnemen?</h2>
+                <a href="contact.html"
+                    class="inline-flex items-center gap-2 rounded-lg px-4 py-2 font-bold achtergrond-roos focus-visible:outline-2 focus-visible:outline-blue-700">
+                    Neem contact op
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5"
+                        aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </section>
+
+            <div class="grid grid-cols-1 gap-8 border-t pt-4 sm:grid-cols-3">
+                <div>
+                    <p class="font-bold">Rachid Ouarmina</p>
+                    <p class="text-sm">Websites die werken op elk scherm.</p>
+                </div>
+                <nav aria-label="Footermenu">
+                    <h2 class="mb-2 text-sm">Pagina's</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="index.html"
+                                class="underline focus-visible:outline-2 focus-visible:outline-blue-700">Home</a>
+                        </li>
+                        <li><a href="portofolio.html"
+                                class="underline focus-visible:outline-2 focus-visible:outline-blue-700">Portfolio</a>
+                        </li>
+                        <li><a href="project.html"
+                                class="underline focus-visible:outline-2 focus-visible:outline-blue-700">Project</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="underline focus-visible:outline-2 focus-visible:outline-blue-700">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2 class="mb-2 text-sm">Contact</h2>
+                    <p><a href="mailto:"
+                            class="underline focus-visible:outline-2 focus-visible:outline-blue-700">rachid@aphogeschool.be</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Rachid Ouarmina</p>
+                <a href="#top" class="underline focus-visible:outline-2 focus-visible:outline-blue-700">Terug
+                    naar boven</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

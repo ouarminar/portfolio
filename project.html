@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectdetail — Rachid Ouarmina</title>
+    <meta name="description"
+        content="Bekijk het project van Rachid Ouarmina in detail: wat het is, hoe ik het maakte en wat ik ervan leerde.">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#inhoud"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800">
+        Ga naar de inhoud
+    </a>
+
+    <div id="top" class="mx-auto max-w-7xl">
+
+        <header class="flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="images/logo_naam.png" alt="logo" class="h-20 w-48 object-contain">
+            </a>
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop"
+                class="cursor-pointer rounded-lg border px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li><a href="index.html" class="block px-3 py-2 rounded-lg hover:underline">Home</a></li>
+                    <li><a href="portofolio.html" class="block px-3 py-2 rounded-lg hover:underline">Portfolio</a></li>
+                    <li><a href="project.html" aria-current="page"
+                            class="block px-3 py-2 rounded-lg font-bold achtergrond-roos">Project</a></li>
+                    <li><a href="contact.html" class="block px-3 py-2 rounded-lg hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-4">
+
+            <main class="flex flex-col gap-12 lg:col-span-3">
+
+                <section class="flex flex-col gap-4">
+
+                    <h1 class="text-2xl font-bold md:text-4xl">Projecttitel</h1>
+                    <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="rounded-full border px-3 py-1 text-sm">Website</li>
+                            <li class="rounded-full border px-3 py-1 text-sm">Webdesign</li>
+                            <li class="rounded-full border px-3 py-1 text-sm">2026</li>
+                        </ul>
+                    </div>
+                    <img src="images/placeholder.png.jpeg" alt="Hoofdafbeelding van het project" width="1200"
+                        height="800" class="h-64 w-full rounded-lg object-cover md:h-96">
+                </section>
+
+                <section class="flex flex-col gap-4">
+                    <h2 class="text-3xl font-bold">De opdracht</h2>
+                    <p class="max-w-2xl">Beschrijving van de opdracht</p>
+                    <img src="images/placeholder.png.jpeg" alt="Schets of onderzoek van het project" width="1200"
+                        height="800" class="h-64 w-full rounded-lg object-cover md:h-96">
+                </section>
+
+                <section class="flex flex-col gap-4">
+                    <h2 class="text-3xl font-bold">Aanpak</h2>
+                    <p class="max-w-2xl">Beschrijving over de aanpak</p>
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <img src="images/placeholder.png.jpeg" alt="Eerste beeld van de aanpak" width="1200"
+                            height="800" class="aspect-video w-full rounded-lg object-cover">
+                        <img src="images/placeholder.png.jpeg" alt="Tweede beeld van de aanpak" width="1200"
+                            height="800" class="aspect-video w-full rounded-lg object-cover">
+                    </div>
+                </section>
+
+                <section class="flex flex-col gap-4">
+                    <h2 class="text-3xl font-bold">Resultaat</h2>
+                    <blockquote class="max-w-2xl rounded-lg p-4 text-2xl font-bold achtergrond-roos">
+                        <p>"Beschrijving van het resultaat en mening"</p>
+                    </blockquote>
+                </section>
+
+                <nav aria-label="Andere projecten" class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <a href="project.html" class="flex h-32 flex-col justify-between rounded-lg p-4 achtergrond-roos">
+                        <span class="text-sm">Vorig project</span>
+                        <span class="font-bold">Projecttitel</span>
+                    </a>
+                    <a href="project.html"
+                        class="flex h-32 flex-col items-end justify-between rounded-lg p-4 achtergrond-zwart">
+                        <span class="text-sm">Volgend project</span>
+                        <span class="font-bold">Projecttitel</span>
+                    </a>
+                </nav>
+
+            </main>
+
+            <aside class="flex flex-col gap-4">
+                <section class="flex flex-col gap-4 rounded-lg p-4 achtergrond-roos">
+                    <h2 class="text-xl font-bold">Projectinfo</h2>
+                    <dl class="grid grid-cols-2 gap-4 border-t pt-4">
+                        <div>
+                            <dt class="text-sm">Opdracht</dt>
+                            <dd class="font-bold">[Opdracht]</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm">Jaar</dt>
+                            <dd class="font-bold">2026</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm">Tools</dt>
+                            <dd class="font-bold">HTML, Tailwind</dd>
+                        </div>
+                    </dl>
+                    <a href=""
+                        class="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-center text-sm font-bold achtergrond-zwart">
+                        Bekijk live website
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4"
+                            aria-hidden="true">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </a>
+                </section>
+                <a href="portofolio.html" class="flex h-32 items-end rounded-lg p-4 font-bold achtergrond-zwart">Meer
+                    projecten
+                    bekijken</a>
+            </aside>
+
+        </div>
+
+        <footer class="mt-12 flex flex-col gap-8 rounded-t-4xl p-6 sm:p-8 achtergrond-zwart">
+            <section class="flex flex-col items-start gap-4">
+                <h2 class="max-w-2xl text-2xl font-bold md:text-4xl">Wil je contact opnemen?</h2>
+                <a href="contact.html"
+                    class="inline-flex items-center gap-2 rounded-lg px-4 py-2 font-bold achtergrond-roos">
+                    Neem contact op
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5"
+                        aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </section>
+
+            <div class="grid grid-cols-1 gap-8 border-t pt-4 sm:grid-cols-3">
+                <div>
+                    <p class="font-bold">Rachid Ouarmina</p>
+                    <p class="text-sm">Websites die werken op elk scherm.</p>
+                </div>
+                <nav aria-label="Footermenu">
+                    <h2 class="mb-2 text-sm">Pagina's</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="index.html" class="underline">Home</a></li>
+                        <li><a href="portofolio.html" class="underline">Portfolio</a></li>
+                        <li><a href="project.html" class="underline">Project</a></li>
+                        <li><a href="contact.html" class="underline">Contact</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2 class="mb-2 text-sm">Contact</h2>
+                    <p><a href="mailto:" class="underline">rachid@aphogeschool.be</a></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Rachid Ouarmina</p>
+                <a href="#top" class="underline">Terug naar boven</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

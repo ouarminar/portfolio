@@ -1,0 +1,26 @@
+:root {
+    --zwart: #100B00;
+    --roos: #FAB2EA;
+    --beige: #EFFFC8;
+}
+
+body {
+    background-color: var(--beige);
+    color: var(--zwart);
+    font-family: "Asap Sharp", sans-serif;
+}
+
+.achtergrond-zwart {
+    background-color: var(--zwart);
+    color: var(--beige);
+}
+
+.achtergrond-roos {
+    background-color: var(--roos);
+    color: var(--zwart);
+}
+
+.achtergrond-beige {
+    background-color: var(--beige);
+    color: var(--zwart);
+}
